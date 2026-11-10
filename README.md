@@ -1,15 +1,11 @@
+
 # 🔐 NetworkWalks Cybersecurity Internship — Week 2
 
 **Project:** Footprinting and Network Scanning  
-
-**Prepared by:** Keza Mika Samuella
-
-**Internship Program:** NetworkWalks Cybersecurity & Ethical Hacking 
-
+**Prepared by:** Keza Mika Samuella    
+**Internship Program:** NetworkWalks Cybersecurity & Ethical Hacking  
 **Modules Completed:** W2-PM4 and W2-PM5  
-
 **Tools:** Kali Linux, theHarvester, Nmap, Zenmap, VirtualBox, Windows  
-
 
 
 
@@ -99,8 +95,15 @@ This does not mean that Microsoft has no publicly accessible infrastructure. It 
 
 ### Evidence
 
-- [Task 1 output](PM4-theHarvester/outputs/PM4_Task1_Baidu.txt)
-- [Task 1 screenshot](PM4-theHarvester/screenshots/PM4_Task1_Baidu.png)
+**Screenshot 1 — Baidu reconnaissance results**
+
+![Baidu reconnaissance results](PM4-theHarvester/screenshots/screenshot%201.png)
+
+**Saved output:**
+
+[View Task 1 Baidu output](PM4-theHarvester/outputs/PM4_Task1_Baidu.txt)
+
+
 
 ## 4.3 Task 2 — Footprinting Using All Sources
 
@@ -120,6 +123,18 @@ During the initial execution, the tool encountered several limitations, includin
 - Failed requests to certain information sources
 
 These errors affected the completeness of the initial results.
+
+### Evidence — Initial Execution
+
+**Screenshot 2 — Initial all-sources command**
+
+![Initial theHarvester command](PM4-theHarvester/screenshots/screenshot%202.png)
+
+**Screenshot 3 — Errors encountered**
+
+![theHarvester errors](PM4-theHarvester/screenshots/screenshot%203.png)
+
+[View initial Task 2 output](PM4-theHarvester/outputs/PM4_Task2_AllSources.txt)
 
 ### Troubleshooting
 
@@ -143,7 +158,7 @@ DNS resolution was also verified using:
 
 Following these checks, theHarvester was executed again.
 
-### Retry results
+### Retry Results
 
 The second execution successfully returned reconnaissance information from available sources.
 
@@ -153,14 +168,19 @@ The 44-host figure represents the result reported by that particular source, not
 
 Some services continued to report missing API credentials or other limitations.
 
-### Evidence
+### Evidence — Successful Retry
 
-- [Initial Task 2 output](PM4-theHarvester/outputs/PM4_Task2_AllSources.txt)
-- [Task 2 retry output](PM4-theHarvester/outputs/PM4_Task2_AllSources_Retry.txt)
-- [Task 2 initial command](PM4-theHarvester/screenshots/PM4_Task2_Initial_Command.png)
-- [Task 2 initial errors](PM4-theHarvester/screenshots/PM4_Task2_Initial_Errors.png)
-- [Task 2 retry](PM4-theHarvester/screenshots/PM4_Task2_Retry.png)
-- [Discovered subdomains](PM4-theHarvester/screenshots/PM4_Task2_Discovered_Subdomains.png)
+**Screenshot 4 — Retried theHarvester scan**
+
+![theHarvester retry results](PM4-theHarvester/screenshots/screenshot%204.png)
+
+**Screenshot 5 — Discovered Microsoft-related subdomains**
+
+![Discovered subdomains](PM4-theHarvester/screenshots/screenshot%205.png)
+
+**Saved output:**
+
+[View Task 2 retry output](PM4-theHarvester/outputs/PM4_Task2_AllSources_Retry.txt)
 
 ## 4.4 PM4 Findings and Lessons Learned
 
@@ -222,6 +242,12 @@ A Ping scan was performed using the following Nmap command through Zenmap:
 
 The scan identified devices responding to host discovery probes.
 
+### Evidence
+
+**Screenshot 6 — Zenmap network discovery results**
+
+![Zenmap live host discovery](PM5-Zenmap/screenshots/Screenshot%206%20zenMAP.png)
+
 ## 5.5 Task 4 — Number of Live Hosts
 
 **Result: 2 live hosts**
@@ -256,10 +282,11 @@ The visualization displayed the network device, the Windows host, and Zenmap's l
 
 The topology was exported to PDF format for documentation.
 
-**Evidence:**
+### Evidence
 
-- [Zenmap network topology PDF](PM5-Zenmap/topology/PM5_Network_Topology.pdf)
-- [Zenmap live-host discovery screenshot](PM5-Zenmap/screenshots/PM5_Zenmap_Live_Hosts.png)
+**Network topology PDF:**
+
+[View Zenmap Network Topology](PM5-Zenmap/topology/PM5_Network_Topology.pdf)
 
 ## 5.9 PM5 Findings and Lessons Learned
 
@@ -355,4 +382,6 @@ The supporting files are organized into the following directories:
 - [Nmap Official Website](https://nmap.org/)
 - [theHarvester GitHub Project](https://github.com/laramies/theHarvester)
 - [NetworkWalks](https://networkwalks.com/)
+
+
 
