@@ -248,27 +248,34 @@ The scan identified devices responding to host discovery probes.
 
 ![Zenmap live host discovery](PM5-Zenmap/screenshots/Screenshot%206%20zenMAP.png)
 
+
 ## 5.5 Task 4 — Number of Live Hosts
 
-**Result: 2 live hosts**
+**Initial scan:** 2 live hosts.
 
-The scan reported two responsive hosts on the local subnet.
+**Latest scan (November 10, 2026):** 3 live hosts.
 
-This does not necessarily mean that only two devices existed on the network, since some devices may not respond to discovery probes.
+The latest scan examined 256 IP addresses and identified three responsive hosts in 12.59 seconds.
+
+The difference between the scans demonstrates that network discovery results can change as devices connect, disconnect, or respond differently to discovery probes.
 
 ## 5.6 Task 5 — IP Addresses of Live Hosts
 
 | Host | IP address |
 |---|---|
+| Discovered local device | 192.168.1.64 |
 | Network device (`dsldevice.lan`) | 192.168.1.254 |
 | Windows host computer | 192.168.1.74 |
 
 ## 5.7 Task 6 — MAC Addresses
 
+
 | IP address | MAC address | Source |
 |---|---|---|
-| 192.168.1.254 | 6C:C6:3B:0E:43:60 | Zenmap |
-| 192.168.1.74 | 3C:F0:11:9C:23:F4 | Windows `ipconfig /all` |
+| 192.168.1.64 | 8A:2B:56:XX:XX:XX | Zenmap |
+| 192.168.1.254 | 6C:C6:3B:XX:XX:XX | Zenmap |
+| 192.168.1.74 | 3C:F0:11:XX:XX:XX | Windows `ipconfig /all` |
+
 
 The Windows host's MAC address was obtained separately because it was not displayed in the Zenmap scan output.
 
